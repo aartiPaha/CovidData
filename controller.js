@@ -6,7 +6,6 @@ const timeseries = async (req, res, next) => {
     let path =
       'https://api.covid19india.org/v4/min/timeseries.min.json';
     try {
-      // //console.log(path);
       const response = await fetch(path);
         const json = await response.json();
         var count = Object.keys(json).length;
